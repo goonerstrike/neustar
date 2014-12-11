@@ -16,7 +16,7 @@ parser.add_option('-o', dest="old_cname_record")
 parser.add_option('-n', dest="new_cname_record")
 options, remainder = parser.parse_args()
 
-if options.domain_name or options.old_cname_record or options.new_cname_record or options.username or options.password== None:
+if options.domain_name or options.old_cname_record or options.new_cname_record or options.username or options.password == None:
         print "Usage: -u <useranme> -p password -d domain -o old_cname_record -n new_cname_record"
         sys.exit()
 
